@@ -2,3 +2,156 @@
 Positioning
 A div that contains an image and a caption, and position the caption absolutely overtop the image.
 Float side bar and content area */
+
+/**** LEGACY FIXES ****/
+
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: '.';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+/* Global */
+
+html, body {
+  background: white;
+  font-size: 1em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: #A8A8A8;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  height: 100%;
+  width: 100%;
+}
+
+ul, ol, p {
+  padding: 0;
+}
+
+h1 { font-size: 2em;}
+h2 { font-size: 1.8em;}
+h3 { font-size: 1.6em;}
+h4 { font-size: 1.4em;}
+h5 { font-size: 1.2em;}
+h6 { font-size: 1.1em;}
+
+a, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin: 4em;
+}
+
+a:hover {
+  color: black  ;
+}
+
+/* Tidying the Header */
+
+.flavor {
+  color: orange;
+}
+
+.nav_menu {
+  display: inline-block;
+  background: #FF6666;
+  width: 100%;
+}
+
+/*** Positioning ***/
+
+.mid_page {
+  text-align: center;
+  padding-bottom: 4em;
+  margin: 1em 0;
+}
+
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* Content and Sidebar */
+
+.content {
+  color: white;
+  width: 60%;
+  margin: 2%;
+  background-color: #7ACF63;
+  float: left;
+}
+
+figure {
+  display: block;
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+  color: black;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+#side_bar {
+  color: white;
+  width: 30%;
+  margin: 2%;
+  background-color: #76A2EE;
+  float: right;
+}
+
+#side_bar ul {
+  margin: 0;
+}
+
+li{
+  list-style-type: none;
+  padding: 1em;
+  border-top: 0.1em solid white;
+}
+
+li:hover{
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.5em;
+  border: 0.2em solid white;
+}
+
+/* Footer setup */
+
+#foot_wrap {
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  height: 2em;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  border-top: 0.1em solid gray;
+}
+
+#footer {
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
