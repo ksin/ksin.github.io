@@ -1,3 +1,68 @@
 /* Link the dbc1.css file to your html file using the "external" method
 Add colors, background colors or fonts of different parts of the page
 Use ids and classes to change specific elements */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(http://fonts.googleapis.com/css?family=Revalia);
+
+/* Global */
+
+body {
+  font-size: 1em;
+  font-family: 'Ubuntu Mono', sans-serif;
+  color: #A8A8A8;
+  padding: 0;
+  margin: 1;
+  line-height: 1;
+}
+
+h1 { font-size: 2em;}
+h2 { font-size: 1.8em;}
+h3 { font-size: 1.6em;}
+h4 { font-size: 1.4em;}
+h5 { font-size: 1.2em;}
+h6 { font-size: 1.1em;}
+
+a, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #FF6666;
+}
+
+a:hover {
+  color: black  ;
+}
+
+ul, ol {
+  border: .5em solid pink;
+  width: 25%;
+  overflow: auto;
+  background-color: gray;
+  color: white;
+}
+
+li {
+  padding: .5em;
+}
+
+/* Class and ID */
+
+#song_title {
+  font-weight: bold;
+  font-family: 'Revalia', cursive;
+}
+
+.email {
+  color: #0066CC;
+}
+
+.bonus_size {
+  width: 25%;
+}
+
+.bonus_size:hover {
+  width: 30%;
+  transition: width 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: width 2s;
+}
