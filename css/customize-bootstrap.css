@@ -6,6 +6,7 @@ a, a:visited, a:hover {
   margin: 0;
   border-bottom: none;
   padding: 0;
+  background: white;
 }
 
 h1 {
@@ -16,15 +17,20 @@ h5 {
   margin: 0.2em 0 1em 0;
 }
 
+h6 {
+  color:  #d9534f;
+  margin-bottom: 2em;
+}
+
 ul {
   padding: 0;
 }
 
-li {
-  list-style-type: none;
+li span {
+  color: #428bca;
 }
 
-span {
+.glyphicon{
   margin-right: 1em; /* so icons aren't clumped */
 }
 
@@ -38,3 +44,21 @@ span {
 .top-clearance {
   margin-top: 4em;
 }
+
+.img-thumbnail {
+  text-align: center;
+  border-color: #eee;
+}
+
+img {
+  max-width: 450px;
+}
+
+.img-thumbnail:hover {
+  opacity: 0.5;
+}
+
+object {
+  margin: 2em 0;
+}
+
