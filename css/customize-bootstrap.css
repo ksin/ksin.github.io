@@ -18,6 +18,10 @@ h5 {
   margin: 0.2em 0 1em 0;
 }
 
+.dbc-stuff, .dbc-stuff>li>span, .dbc-stuff>li>a {
+  color: #009999;
+}
+
 h6 {
   color:  #d9534f;
   padding: 0.8em 0 2em 0;
