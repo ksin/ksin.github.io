@@ -22,6 +22,10 @@ h5 {
   color: #009999;
 }
 
+.dbc-stuff>li>a:hover {
+  color: #006d6d;
+}
+
 h6 {
   color:  #d9534f;
   padding: 0.8em 0 2em 0;
