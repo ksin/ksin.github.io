@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <meta name="keywords" content="#">
+  <meta name="description" content="#">
+
+  <title>DBC blog posts</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/blogstyle.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+
+    <header><h1>Technical Blog Entry #3<h1> <a href="../index.html">let's go home</a></header>
+
+    <p>Enumerable#map evalutes every element in a collection through a block and returns a new collection with
+      the evaluated elements inside.<br>
+      ie: x = [1,2,3,4]<br>
+      x.map {|num| num + 3}   #=> [4,5,6,7]<br><br>
+
+      Enumerable#group_by evalutes every element in a collection through a block and returns a hash where the key
+      is the evaluated result and the values are arrays of elements in the collection that correspond to that result.<br>
+      ie: (1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}<br><br>
+
+      Enumerable#cycle calls the block for each element in the collection forever, or if there is an argument,
+      repeat for the argument's number of times.<br>
+      ie: a = ["a", "b", "c"]<br>
+      a.cycle { |x| puts x }  # print, a, b, c, a, b, c,.. forever.<br>
+      a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.<br>
+    </p>
+
+    
+  </div>
+
+
+</body>
+</html>
