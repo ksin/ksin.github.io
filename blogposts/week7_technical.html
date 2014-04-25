@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+
+  <meta name="keywords" content="#">
+  <meta name="description" content="#">
+
+  <title>DBC blog posts</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/blogstyle.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="container">
+
+    <header><h1>Week 7 Technical Blog Entry<h1> <a href="../index.html">let's go home</a></header>
+
+    <p>"Look up issues with SQL (specifically SQL Injection). What is it? Why is it a problem? What can newb programmers do to combat this issue?"<br><br>
+
+      SQL allows you to retrieve and update databse data. Web pages often let users input their own search values to draw and display data from a database using SQL. The fact that SQL statements are text only makes them relatively easy to change dynamically to provide users with selected data. For example: a user input can be stored as a variable which gets added to the SQL statement to retrieve the appropriate data. However, this simplicity is also the cause of some security issues in web applications that use SQL. SQL injection is the term for injecting SQL commands into an SQL statement via web input, that can alter and compromise the security of the database.<br><br>
+
+      Read more on this topic here: http://www.w3schools.com/sql/sql_injection.asp <br><br>
+
+      The main dangers to look out for is Always True statements and Batched SQL statements.<br><br>
+
+      The parameters for protection include "blacklists" of words or characters to search for in SQL input to prevent SQL injection attacks. However, the proven approach to protecting a web site is to use SQL parameters - values that are added to an SQL query at execution time, in a controlled manner. THe key is the @ marker.
+
+    </p>
+
+    
+  </div>
+
+
+</body>
+</html>
