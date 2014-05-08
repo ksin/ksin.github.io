@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Cheatsheet</title>
+    <link rel="stylesheet" type="type/css" href="../css/cheatsheet.css">
+</head>
+
+<body>
+    <div id="sidebar"><h2>Javascript Prototypes</h2>
+        <ul>
+            <li><a href="#jsprotodescr">Description</a></li>
+            <li><a href="#jsprotomethods">Methods</a></li>
+            <li><a href="#jsprotoex">Example</a></li>
+        </ul>
+    
+    </div>
+    
+    <div id="content"><h1>Cheatsheet</h1> 
+        
+        <p id="jsprotodescr">All objects in JavaScript are descended from Object; all objects inherit methods and properties from Object.prototype, although they may be overridden (except an Object with a null prototype, i.e. Object.create(null)). For example, other constructors' prototypes override the constructor property and provide their own toString methods. Changes to the Object prototype object are propagated to all objects unless the properties and methods subject to those changes are overridden further along the prototype chain.</p>    
+        
+        <ul id="jsprotomethods"><u>Methods</u>
+            <li><span class="method_name">Object.prototype.constructor</span>
+Specifies the function that creates an object's prototype.</li>
+            <li><span class="method_name">Object.prototype.__proto__ </span>
+Points to the object which was used as prototype when the object was instantiated.</li>
+                <li><span class="method_name">Object.prototype.__noSuchMethod__ </span>
+Allows a function to be defined that will be executed when an undefined object member is called as a method.</li>
+                <li><span class="method_name">Object.prototype.hasOwnProperty()</span>
+            Returns a boolean indicating whether an object contains the specified property as a direct property of that object and not inherited through the prototype chain.</li>
+                <li><span class="method_name">Object.prototype.isPrototypeOf()</span>
+                Returns a boolean indication whether the specified object is in the prototype chain of the object this method is called upon.</li>
+                <li><span class="method_name">Object.prototype.toString()</span>
+                Returns a string representation of the object.</li>
+            <li><span class="method_name">Object.prototype.valueOf()</span>
+                    Returns the primitive value of the specified object.</li>
+        </ul>
+        
+        
+        <div id="jsprotoex">Since Javascript doesn't exactly have sub-class objects, prototype is a useful workaround to make a "base class" object of certain functions that act as objects. For example:<br><br>
+        
+    <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">var</span> <span style="color: #a6e22e">Person</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">canTalk</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">canTalk</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #a6e22e">console</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">log</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Hi, I&#39;m &quot;</span> <span style="color: #f92672">+</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">name</span><span style="color: #f8f8f2">);</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">};</span>
+<span style="color: #f8f8f2">};</span>
+
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">Employee</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">name</span><span style="color: #f8f8f2">,</span> <span style="color: #a6e22e">title</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">name</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">name</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">title</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">title</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">()</span> <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">canTalk</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+            <span style="color: #a6e22e">console</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">log</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Hi, I&#39;m &quot;</span> <span style="color: #f92672">+</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">name</span> <span style="color: #f92672">+</span> <span style="color: #e6db74">&quot;, the &quot;</span> <span style="color: #f92672">+</span> <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">title</span><span style="color: #f8f8f2">);</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">};</span>
+<span style="color: #f8f8f2">};</span>
+<span style="color: #a6e22e">Employee</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">prototype</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Person</span><span style="color: #f8f8f2">();</span>
+
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">Customer</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">name</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">name</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">name</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">};</span>
+<span style="color: #a6e22e">Customer</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">prototype</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Person</span><span style="color: #f8f8f2">();</span>
+
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">Mime</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">function</span><span style="color: #f8f8f2">(</span><span style="color: #a6e22e">name</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">name</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">name</span><span style="color: #f8f8f2">;</span>
+    <span style="color: #66d9ef">this</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">canTalk</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">false</span><span style="color: #f8f8f2">;</span>
+<span style="color: #f8f8f2">};</span>
+<span style="color: #a6e22e">Mime</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">prototype</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Person</span><span style="color: #f8f8f2">();</span>
+
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">bob</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Employee</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;Bob&#39;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&#39;Builder&#39;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">joe</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Customer</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;Joe&#39;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">rg</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Employee</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;Red Green&#39;</span><span style="color: #f8f8f2">,</span><span style="color: #e6db74">&#39;Handyman&#39;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">mike</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Customer</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;Mike&#39;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #66d9ef">var</span> <span style="color: #a6e22e">mime</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Mime</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;Mime&#39;</span><span style="color: #f8f8f2">);</span>
+<span style="color: #a6e22e">bob</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span><span style="color: #f8f8f2">();</span>
+<span style="color: #a6e22e">joe</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span><span style="color: #f8f8f2">();</span>
+<span style="color: #a6e22e">rg</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span><span style="color: #f8f8f2">();</span>
+<span style="color: #a6e22e">mike</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span><span style="color: #f8f8f2">();</span>
+<span style="color: #a6e22e">mime</span><span style="color: #f8f8f2">.</span><span style="color: #a6e22e">greet</span><span style="color: #f8f8f2">();</span>
+</pre></td></tr></table></div><br>
+            This will output:
+
+            <ul>
+                <li>Hi, I'm Bob, the Builder</li>
+                <li>Hi, I'm Joe</li>
+                <li>Hi, I'm Red Green, the Handyman</li>
+                <li>Hi, I'm Mike</li>
+            </ul>
+        </div> <!--#jsprototype-->
+        
+    </div> <!--#cheatsheet-->
+    
+</body>
+
+</html>
