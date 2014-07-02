@@ -1,129 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width initial-scale=1">
+---
+layout: default
+---
 
-    <meta name="keywords" content="#">
-    <meta name="description" content="#">
+<div class="home">
 
-    <title>somethingken</title>
+  <h1>Posts</h1>
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <link rel="stylesheet" href="css/customize-bootstrap.css">
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-
-    <header class="navbar navbar-fixed-top">
-        <div class="container-fluid page-header">
-          <h1 id="logo">something<span class="hidden-xs">s about </span>ken <small class="hidden-xs">but not everything</small></h1>
-        </div>
-    </header>
-
-    <section class="container-fluid">
-
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-md-8 divider top-clearance">
-
-              <h5><span class="glyphicon glyphicon-eye-open"></span>Look</h5>
-              <div class="container-fluid">
-                
-
-                <div class="row">
-                  <div class="col-xs-12 col-sm-6">
-
-                    <a href="http://i5.minus.com/iy7BJvM7iNRkc.png" title="click through for full comic" target="_blank"><figure class="tint"><img src="images/LoveCounseling-resized.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-pencil"></span>sometimes I can be really supportive</h6>
-        
-
-                    <a href="http://grayorblue.com/thickasthievesla/index.html" title="click through to go to website" target="_blank"><figure class="tint"><img src="images/tat.png"></img><br><img src="images/tat2.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-file"></span>a website I'm working on</h6>
-
-                    <a href="http://25.media.tumblr.com/b6d72ee258cc27f589f5eba5c5116bf0/tumblr_n1fo5of4Bj1trls07o1_1280.jpg" title="click through for full drawing" target="_blank"><figure class="tint"><img src="images/jwall.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-pencil"></span>Number 2 at the dunk contest</h6>
-
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-
-                    <a href="http://ken-sin.tumblr.com/post/77360279181/i-used-some-pens-and-markers-to-draw-a-happy" title="click through for full drawing" target="_blank"><figure class="tint"><img src="images/amyseth2.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-pencil"></span>happy picture of amy and seth</h6>
-
-                    <a href="http://25.media.tumblr.com/ebea27e324f76a615a18f105b5d76c36/tumblr_n186ymMsiz1trls07o1_1280.jpg" title="click through for full drawing" target="_blank"><figure class="tint"><img src="images/circles.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-pencil"></span>I'm like really bad at drawing circles</h6>
-
-                    <a href="https://31.media.tumblr.com/9b2403ff1b9bc23ea9846cc3e22c4e48/tumblr_n0v61fekVp1trls07o1_400.png" title="click through for full image" target="_blank"><figure class="tint"><img src="images/funnychat.png"></img></figure></a>
-                    <h6><span class="glyphicon glyphicon-comment"></span>heh heh...</h6>
-
-                  </div>
-                </div>
-
-              </div>
-        </div>
-
-
-
-        <div class="col-xs-12 col-sm-4 divider top-clearance">
-
-            <h5><span class="glyphicon glyphicon-headphones"></span>Listen</h5>
-
-                    <iframe width="100%" height="250" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/26757515&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
- 
-              <h5 class="top-clearance" style="padding-top: 2em;"><span class="glyphicon glyphicon-link"></span>Connect</h5>
-              
-                    <ul class="list-unstyled">
-                      <li><span class="glyphicon glyphicon-chevron-right"></span><a href="http://ken-sin.tumblr.com/" target="_blank">ken's tumblr</a></li>
-                      <li><span class="glyphicon glyphicon-chevron-right"></span><a href="http://bootcastny.tumblr.com/" target="_blank">bootcastny</a></li><br> 
-                      <li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:anythingken@gmail.com" target="_blank">contact</a></li>  
-                     </ul> 
-
-              <h5 class="top-clearance" style="padding-top: 2em;"><span class="glyphicon glyphicon-calendar"></span>DBC</h5>       
-
-                    <ul class="list-unstyled dbc-stuff">
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="unit1_week/dbc1.html" target="_blank">dbc1 page</a></li>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="unit1_week/dbc2.html" target="_blank">dbc2 page</a></li>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="unit1_week/blogpost.html" target="_blank">3 fave sites</a></li><br> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/03_19_14t.html" target="_blank">technical 2</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/03_19_14c.html" target="_blank">cultural 2</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week3_technical.html" target="_blank">technical 3</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week3_cultural_blog.html" target="_blank">cultural 3</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week4_technical.html" target="_blank">technical 4</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week4_cultural_blog.html" target="_blank">cultural 4</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week5_technical.html" target="_blank">technical 5</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week5_cultural.html" target="_blank">cultural 5</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week6_technical.html" target="_blank">technical 6</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week6_cultural_blog.html" target="_blank">cultural 6</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week7_technical.html" target="_blank">technical 7</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week7_cultural.html" target="_blank">cultural 7</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week8_technical.html" target="_blank">technical 8</a></li> 
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week8_cultural.html" target="_blank">cultural 8</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/week9_cultural.html" target="_blank">cultural 9</a></li><br>
-                      <li><span class="glyphicon glyphicon-ok"></span><a href="blogposts/cheatsheet.html" target="_blank">cheatsheet</a></li>
-
-                    </ul>
-      
-        </div>
-      </div>
-
-
-
-    </section>
-
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+</div>
