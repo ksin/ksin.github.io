@@ -412,5 +412,6 @@ a:visited { color: #205caa; }
 /* Customization */
 
 img {
-  float: center;
+  display: block;
+  margin: 0 auto;
 }
