@@ -12,7 +12,7 @@ My group and I immediately rushed to one of the rooms and claimed it. This room 
 ![object room](/assets/object.JPG)
 ![sign](/assets/sign.JPG)
 
-Our pending project title is "Kindling", even though that's already a thing. We're actually struggling a lot with coming up with an original name! Our team of four is: [Dave Kerr][dave-github], [Judy Jow][judy-github], [Raghav Malik][raghav-github], and [myself][ken-github].
+Our pending project title is "Kindling" - even though that name's already taken. We're actually struggling a lot with coming up with an original name! Our team of four is: [Dave Kerr][dave-github], [Judy Jow][judy-github], [Raghav Malik][raghav-github], and [myself][ken-github].
 
 Dave is our project manager since he pitched the idea. The first thing we did was ask our project manager what his vision for our product was. Frankly, I was still not clear what the app was supposed to do since I don't own a Kindle.
 
