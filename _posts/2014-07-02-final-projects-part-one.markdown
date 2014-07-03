@@ -9,8 +9,8 @@ Yesterday, we started our final projects. Everyone made their pitches at 2pm, an
 
 My group and I immediately rushed to one of the rooms and claimed it. This room is named "Object", and it's not much, but we're going to be in here a lot for the next week...
 
-[object room](/assets/object.JPG)
-[sign](/assets/sign.JPG)
+![object room](/assets/object.JPG)
+![sign](/assets/sign.JPG)
 
 Our pending project title is "Kindling", even though that's already a thing. We're actually struggling a lot with coming up with an original name! Our team of four is: [Dave Kerr][dave-github], [Judy Jow][judy-github], [Raghav Malik][raghav-github], and [myself][ken-github].
 
@@ -28,11 +28,11 @@ WELL, that was a long rant. Anyway, Sam and Rebecca came in eventually and gave 
 
 After that, we finally got to doing some real work! The first thing we did was spend a long time writing user stories and wireframing our site. It was a little tricky because we wanted a lot of nice design elements. We wanted our page to be really responsive and AJAX-ified, but also produce URLs to our users so they can share a certain page. Ultimately we came up with something like this...
 
-[wireframe](/assets/wireframe.JPG)  
+![wireframe](/assets/wireframe.JPG)  
 
 We took a break for dinner. I got a brisket bowl from Tres Carnes. :) The last thing we did before calling it a day was design our schemas.
 
-[schema](/assets/schema.JPG)
+![schema](/assets/schema.JPG)
 
 We didn't code much yet, but I think we've set ourselves up well to get rolling today. 
 
