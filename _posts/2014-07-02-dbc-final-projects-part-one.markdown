@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Final projects | part one"
+title:  "DBC Final projects | part one"
 date:   2014-07-03 08:24:00
 categories: dbc final-project
 ---
