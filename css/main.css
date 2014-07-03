@@ -412,6 +412,5 @@ a:visited { color: #205caa; }
 /* Customization */
 
 img {
-  max-width: 100%;
-  margin: 0 auto;
+  float: center;
 }
