@@ -28,4 +28,4 @@ Our first sprint ends today, which means Judy buys us ice cream. :)
 
 ![sprint1calendar](/assets/sprint1calendar.png)
 
-I still think there's a better way for us to divide the work to be more efficient. For one, I guess we need to lax up on the commit and pull request standards we set for ourselves so we can get more work done. I will propose my other ideas to the team today and we'll see how things work out by tomorrow. Bye for now.
+I still think there's a better way for us to divide the work to be more efficient. For one, I guess we need to lax up on the git commit and pull request standards we set for ourselves so we can get more work done. Bye for now.
