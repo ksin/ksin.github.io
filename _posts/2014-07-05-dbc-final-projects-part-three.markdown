@@ -10,7 +10,7 @@ categories: dbc final-project
 
 We got a lot done yesterday. It didn't feel like it while we were working, but when looking at our Trello board last night, I noticed we cleared every objective in our sprint and even completed some tasks for our next sprint. Since Judy named our sprints after ice cream flavors, we celebrate the end of each sprint by having ice cream. Mmmm... This sprint was called Chocolate Eclair. 
 
-![icecream](/assets/icecream.png)
+![icecream](/assets/icecream.JPG)
 
 Thanks for the ice cream Judy!
 
@@ -19,7 +19,7 @@ Of course we're far from the product we really really want. I believe we have en
 We also had time around 9 pm to go to a rooftop and view the Fourth of July fireworks. I ran into Sam on my subway ride back home. He was elated that we were ahead of schedule. He was also a little bit drunk.
 
 Here are some pics of the team hard at work:
-![daveworking](/assets/daveworking.png)
-![judyworking](/assets/judyworking.png)
-![raghavworking](/assets/raghavworking.png)
+![daveworking](/assets/daveworking.JPG)
+![judyworking](/assets/judyworking.JPG)
+![raghavworking](/assets/raghavworking.JPG)
 
