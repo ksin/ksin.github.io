@@ -415,3 +415,8 @@ img {
   display: block;
   margin: 0.5em auto;
 }
+
+.rss-subscribe {
+  font-size: 0.9em;
+  opacity: 0.9;
+}
