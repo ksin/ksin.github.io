@@ -6,4 +6,4 @@ permalink: /about/
 
 Currently working on: [DBC final project][kindle app]
 
-[kindle app]: https://github.com/cicadas-2014/quipspot
+[kindle app]: https://github.com/cicadas-2014/quotemunk
