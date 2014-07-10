@@ -13,4 +13,4 @@ By the end of Wednesday, we had most of our features done and polished. We had a
 
 Of course, there will always be things we want to improve on and add. I remember an instructor once told us we will always have this feeling as a developer. I think now, we've slightly gotten more used to it.
 
-![homepage_screenshot](/assets/home_pagescreenshot.png)
+![homepage_screenshot](/assets/homepage_screenshot.png)
