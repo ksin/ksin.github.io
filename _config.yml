@@ -1,9 +1,9 @@
 # Site settings
 title: Ken Sin
 email: anythingken@gmail.com
-description: "wut up doe"
+description: "http://www.quotemunk.com"
 baseurl: ""
-url: "http://www.quotemunk.com"
+url: "http://yourdomain.com"
 twitter_username: nisnek
 github_username:  ksin
 
