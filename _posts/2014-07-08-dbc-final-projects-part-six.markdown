@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "DBC Final projects | part six"
+title:  "quotemunk | part six"
 date:   2014-07-08 14:21:00
 categories: dbc final-project
 ---
